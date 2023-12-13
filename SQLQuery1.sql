@@ -27,10 +27,5 @@ EXEC GetEmployeesByDepartment @DeptName = 'IT';
 
 -- Update data in the Employees table
 UPDATE Employees
-<<<<<<< HEAD
 SET Department = 'HR'
-WHERE LastName = 'adavce';
-=======
-SET Department = 'IT'
-WHERE LastName = 'Smith';
->>>>>>> 2c44d554731b8f4bc4eb20d793f0a923d98cfb6f
+WHERE LastName = 'nama';
