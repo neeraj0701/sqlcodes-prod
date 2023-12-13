@@ -32,4 +32,4 @@ WHERE LastName = 'cameraga';
 
 UPDATE Employees
 SET Department = 'IT'
-WHERE LastName = 'cameraga';
+WHERE LastName = 'njnj';
