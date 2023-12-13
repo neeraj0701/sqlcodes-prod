@@ -29,7 +29,3 @@ EXEC GetEmployeesByDepartment @DeptName = 'IT';
 UPDATE Employees
 SET Department = 'HR'
 WHERE LastName = 'cameraga';
-
-UPDATE Employees
-SET Department = 'IT'
-WHERE LastName = 'njnj';
