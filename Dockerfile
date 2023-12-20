@@ -5,10 +5,10 @@ FROM mcr.microsoft.com/mssql/server:latest
 ENV ACCEPT_EULA=Y
 ENV SA_PASSWORD=neeraj@2001
 
-# Create a directory for SQL Server scripts
-RUN mkdir -p E:\app\
-#WORKDIR /usr/src/app
-WORKDIR E:\app\
+# # Create a directory for SQL Server scripts
+# RUN mkdir -p E:\app\
+# #WORKDIR /usr/src/app
+# WORKDIR E:\app\
 
 # Copy SQL initialization script to the container
 # COPY init.sql /usr/src/app/
