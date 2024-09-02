@@ -1,15 +1,12 @@
-trigger:
-- dev
+name: PrintSourcesDirectory
 
+trigger:
+  - master
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'ubuntu-latest'
 
 steps:
-- checkout: self
-  displayName: 'Checkout dev branch'
-
-- task: CmdLine@2
-  inputs:
-    script: |
-      Write-Host "Build.SourcesDirectory: $env:Build_SourcesDirectory"
+- script: |
+    Write-Host "Build.SourcesDirectory: $env:Build_SourcesDirectory"
+  displayName: Print Sources Directory
