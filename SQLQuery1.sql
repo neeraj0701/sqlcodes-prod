@@ -30,3 +30,10 @@ UPDATE Employees122
 SET Department = 'HR'
 WHERE LastName = 'hashak';
 
+CREATE TABLE Employees123 (
+    EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Department VARCHAR(50)
+);
+
