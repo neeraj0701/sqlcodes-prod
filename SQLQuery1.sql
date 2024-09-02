@@ -1,5 +1,5 @@
 -- Create a table
-CREATE TABLE Employees (
+CREATE TABLE Employees122 (
     EmployeeID INT PRIMARY KEY,
     FirstName VARCHAR(50),
     LastName VARCHAR(50),
@@ -7,7 +7,7 @@ CREATE TABLE Employees (
 );
 
 -- Insert data into the table
-INSERT INTO Employees (EmployeeID, FirstName, LastName, Department)
+INSERT INTO Employees122 (EmployeeID, FirstName, LastName, Department)
 VALUES 
     (1, 'John', 'Doe', 'IT'),
     (2, 'Jane', 'Smith', 'HR'),
@@ -19,14 +19,14 @@ CREATE PROCEDURE GetEmployeesByDepartment
 AS
 BEGIN
     SELECT EmployeeID, FirstName, LastName
-    FROM Employees
+    FROM Employees122
     WHERE Department = @DeptName;
 END;
 
 EXEC GetEmployeesByDepartment @DeptName = 'IT';
 
 -- Update data in the Employees table
-UPDATE Employees
+UPDATE Employees122
 SET Department = 'HR'
 WHERE LastName = 'hashak';
 
