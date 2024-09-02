@@ -11,4 +11,4 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      sqlcmd -S <192.168.0.30> -d <neeraj> -U <User5> -P <Cdev005#8> -i "$(Build.SourcesDirectory)\SQLQuery1.sql"
+      dir "$(Build.SourcesDirectory)"
